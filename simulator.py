@@ -22,7 +22,7 @@ def create_tables(table_num, mycursor):
 
 if __name__ == "__main__":
     width = 200
-    height = 100
+    height = 120
     pix = get_gray_matrix(width, height)
 
     # connect database        
@@ -47,10 +47,10 @@ if __name__ == "__main__":
         
         end_time = time.time()
         duration = end_time - start_time
-        if(duration > 60):
+        if(duration > 10):
             break
         print(x, 'done in', duration, 'seconds')
-        time.sleep(60 - duration)
+        time.sleep(10 - duration)
 
     mydb.close()
                
