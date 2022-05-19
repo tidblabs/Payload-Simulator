@@ -47,10 +47,10 @@ if __name__ == "__main__":
         
         end_time = time.time()
         duration = end_time - start_time
-        if(duration > 10):
+        if(duration > 5):
             break
         print(x, 'done in', duration, 'seconds')
-        time.sleep(10 - duration)
+        time.sleep(5 - duration)
 
     mydb.close()
                
